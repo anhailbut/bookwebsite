@@ -1,0 +1,13 @@
+language: bash
+install: bash install.sh
+script: bash script.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  on:
+    branch: main
+env:
+  global:
+    secure: nA67KMqMzSCfeeHFh8KgCQ6OWYlTa4WvxdG47BFG/t4PWHZy8Zak+naJ3JlYb3AQ0bZw4T+H6wXPJo0JViG9nBid+Bwy8DSTZVoxO4ZpUcHBOpL6rx7tkn9xakRtreK355S1i0cBTapskmWzxG/j3KJyC6HpGihivsM9U7CXpZdqy898t93O7eeYl4VKUrTfpGqDs/sexij346Mkmzilm8Sdv1E4Cu+qiGG8kYDpJDN66dsTBKrklaL7A6Y7sljAYTl4/k+W61alHhP6q4uTNyjrULZCdd1MES67awN/nz2lmjFWKpyNTTUdLhHk0VRP7mawYNRMQ4eDJqOgC19IgWXhP2mUNRoZO0JfRAgFKltrm80aC44KGCQQb3TO0LVcTuvc+eRNbtjmUNcPMMY3vfOLoj6793xMxU46lt2BD4Mqnj2nQvjXLiYdfFzW8WXOAY3inSiyphr2xD2F3RqSqbeDT/DNV0a2il3E3QdmNAeUcP+Z44eHOEelUC5nO3AXl2PRxdLXxOcLS7aYU3dhAS8hRJ1/Kv2Ij9EyKMELR9meV5V7qdZXtJeM+ML4fB785ly9SApowoD+Bo05aVL259dUnxK6NS3FkDEEyVxkWnJRePXF4KGVX97XTJuxmhbTjTsQYdF2AJzinPonygFXpRIMw2T3jVUvByCjqiybmSk=
